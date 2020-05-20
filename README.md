@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d8d0405d-fa49-4824-be12-649fb8083f67/deploy-status)](https://app.netlify.com/sites/coderarena/deploys)
+
 # coderarena.com.br
 This is the source code for my personal website (https://coderarena.com.br/). I'm using [Hugo](https://gohugo.io) static site generator.
 If you're interested to build your website based on mine, feel free and follow the guidelines below.
