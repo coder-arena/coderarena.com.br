@@ -20,8 +20,8 @@ disqusShortname = "coderarena"
     title = "Coder Arena"
     weight = 1
     [languages.ptbr.params]
-      description = "Artigos e vídeo aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas"
-      metadescription = "Artigos e vídeo aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas"
+      description = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
+      metadescription = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
       cover = "images/2020/05/coderarena-header.png"
       author = "Marcos V. Leal"
       email1 = "marcosleal@coderarena.com.br"
@@ -65,8 +65,8 @@ disqusShortname = "coderarena"
     title = "Coder Arena"
     weight = 1
     [languages.en.params]
-      description = "Articles and videos on development, programming, career, entrepreneurship and other things"
-      metadescription = "Articles and videos on development, programming, career, entrepreneurship and other things"
+      description = "Articles and video lessons on development, programming, career, entrepreneurship and other things."
+      metadescription = "Articles and video lessons on development, programming, career, entrepreneurship and other things."
       cover = "images/2020/05/coderarena-header.png"
       author = "Marcos V. Leal"
       email1 = "marcosleal@coderarena.com.br"
