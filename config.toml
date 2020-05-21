@@ -31,13 +31,13 @@ theme = "paper"
 [params]
   description = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
   metadescription = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
-  cover = "images/2020/05/coderarena-header.png"
+  cover = "https://cdn.coderarena.com.br/images/coderarena-cover.png"
   author = "Marcos V. Leal"
   email = "marcosleal@coderarena.com.br"
   authorlocation = "São Paulo, Brasil"
   authorwebsite = "https://coderarena.com.br"
   bio= "Escritor de códigos, apaixonado por café, tecnologia e empreendedorismo."
-  logo = "images/2020/05/logo-icon.png"
+  logo = "images/2020/05/logo-icon.svg"
   paginate = 10
 
   # Optional RSS-Link, if not provided it defaults to the standard index.xml

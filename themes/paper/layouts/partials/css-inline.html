@@ -166,6 +166,14 @@
     margin-top: 30px
   }
 
+  .nav-main {
+    position: relative;
+    color: #222b45;
+    box-shadow: 0 0.5rem 1rem 0 rgba(44, 51, 73, 0.1);
+    height: 4.75rem;
+    padding: 1.25rem;
+  }
+
   .menu-toggle {
     display: block;
     position: absolute;
@@ -326,8 +334,11 @@
   }
 
   .post-entry {
+    width: 98%;
+    margin: 0 auto;
     border-radius: 6px;
     border: solid #ccc 1px;
+    transition: box-shadow .3s ease-in-out;
   }
 
   .post-entry:active {
@@ -609,14 +620,17 @@
   }
 
   @media (max-width:1024px) {
+    .nav-main {
+      height: auto;
+    }
+
     #menu-content {
       display: none;
     }
   }
 
   .logo {
-    width: 30px;
-    margin-right: 10px
+    max-height: 1.875rem;
   }
 
   .header-menu {
