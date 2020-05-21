@@ -19,9 +19,12 @@
 {{ end }}
 
 <article class="post {{ .Scratch.Get `postClass` }}">
-    {{ if .Params.image }}
-      <img class="w-full" src="{{.Params.image}}">
+    {{ if .Params.images}}
+      {{ if gt (len .Params.images) 0 }}
+        <img class="w-full" src="{{ index (.Params.images) 0 }}">
+      {{ end }}
     {{ end }}
+
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">{{ .Title }}</div>
       <p class="text-gray-700 text-base">
@@ -31,7 +34,7 @@
         {{ .Summary | plainify | htmlUnescape }}...
         {{ end}}
       </p>
-      <p class="post-meta"><time>{{ .Date.Format "2/1/2006" }}</time></p>
+      <p class="post-meta"><time>{{ .Date.Format "02/01/2006" }}</time></p>
     </div>
     <div class="px-6 py-4">
         {{ if .Params.tags }}
@@ -51,7 +54,7 @@
         </span>
       {{ end }}
     </div>
-    
+
 </article>
 
 {{ end }}

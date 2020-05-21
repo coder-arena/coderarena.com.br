@@ -1,108 +1,63 @@
 BaseUrl= "https://coderarena.com.br/"
-LanguageCode= "ptbr"
-DefaultContentLanguage = "ptbr"
-title = "Coder Arena"
+LanguageCode= "pt-br"
+DefaultContentLanguage = "pt-br"
+Title = "Coder Arena"
+weight = 1
 Copyright = "Creative Commons - 2020"
-canonifyurls = true
+canonifyURLs = true
 enableRobotsTXT = true
-theme = "paper"
 disqusShortname = "coderarena"
+
+theme = "paper"
+
+[auhor]
+  name = "Marcos V. Leal"
+
+[permalinks]
+  posts = "/posts/:slug/"
 
 [sitemap]
   changefreq = "monthly"
   filename = "sitemap.xml"
-  priority = 0.5
+  priority = 0.8
 
-[languages]
-  [languages.ptbr]
-    languageName = "ptbr"
-    contentDir = "content/ptbr"
-    title = "Coder Arena"
-    weight = 1
-    [languages.ptbr.params]
-      description = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
-      metadescription = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
-      cover = "images/2020/05/coderarena-header.png"
-      author = "Marcos V. Leal"
-      email1 = "marcosleal@coderarena.com.br"
-      email2 = "marcosleal.prd@gmail.com"
-      authorlocation = "São Paulo, Brasil"
-      authorwebsite = "https://coderarena.com.br"
-      bio= "Escritor de códigos, apaixonado por café, tecnologia e empreendedorismo."
-      logo = "images/2020/05/logo-icon.png"
-      paginate = 10
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "Sobre"
+    url = "/about/"
+    weight = -130
 
-      # Optional RSS-Link, if not provided it defaults to the standard index.xml
-      # RSSLink = "http://feeds.feedburner.com/..."
-      githubName = "marcosleal-prd"
-      twitterName = "marcosleal_prd"
-      facebookName = "marcosleal.prd"
-      instagramName = "marcosleal.prd"
-      linkedinName = "marcosleal-prd"
+[params]
+  description = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
+  metadescription = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
+  cover = "images/2020/05/coderarena-header.png"
+  author = "Marcos V. Leal"
+  email = "marcosleal@coderarena.com.br"
+  authorlocation = "São Paulo, Brasil"
+  authorwebsite = "https://coderarena.com.br"
+  bio= "Escritor de códigos, apaixonado por café, tecnologia e empreendedorismo."
+  logo = "images/2020/05/logo-icon.png"
+  paginate = 10
 
-      # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
-      hideHUGOSupport = false
-      [languages.ptbr.permalinks]
-        post = "/:slug/"
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  # RSSLink = "http://feeds.feedburner.com/..."
+  githubName = "marcosleal-prd"
+  twitterName = "marcosleal_prd"
+  facebookName = "marcosleal.prd"
+  instagramName = "marcosleal.prd"
+  linkedinName = "marcosleal-prd"
 
-      # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
-      # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
-      # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
-      hjsStyle = "default"
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = false
 
-      [languages.ptbr.params.social]
-        twitter = "marcosleal_prd"
+  # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
+  # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
+  # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
+  hjsStyle = "dracula"
 
-    [[languages.ptbr.menu.main]]
-      name = "Sobre"
-      weight = -130
-      identifier = "about"
-      url = "/sobre"
-
-  [languages.en]
-    languageName = "en"
-    contentDir = "content/en"
-    title = "Coder Arena"
-    weight = 1
-    [languages.en.params]
-      description = "Articles and video lessons on development, programming, career, entrepreneurship and other things."
-      metadescription = "Articles and video lessons on development, programming, career, entrepreneurship and other things."
-      cover = "images/2020/05/coderarena-header.png"
-      author = "Marcos V. Leal"
-      email1 = "marcosleal@coderarena.com.br"
-      email2 = "marcosleal.prd@gmail.com"
-      authorlocation = "São Paulo, Brasil"
-      authorwebsite = "https://coderarena.com.br"
-      bio= "Code writer, passionate about coffee, technology and entrepreneurship."
-      logo = "images/2020/05/logo-icon.png"
-      paginate = 10
-
-      # Optional RSS-Link, if not provided it defaults to the standard index.xml
-      # RSSLink = "http://feeds.feedburner.com/..."
-      githubName = "marcosleal-prd"
-      twitterName = "marcosleal_prd"
-      facebookName = "marcosleal.prd"
-      instagramName = "marcosleal.prd"
-      linkedinName = "marcosleal-prd"
-
-      # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
-      hideHUGOSupport = false
-      [languages.en.permalinks]
-        post = "/:slug/"
-
-      # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
-      # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
-      # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
-      hjsStyle = "default"
-
-      [languages.en.params.social]
-        twitter = "marcosleal_prd"
-
-    [[languages.en.menu.main]]
-      name = "About"
-      weight = -130
-      identifier = "about"
-      url = "/en/about"
+  [params.social]
+    twitter = "marcosleal_prd"
 
 [deployment]
 order = [".png$", ".jpg$", ".gif$", ".svg$"]

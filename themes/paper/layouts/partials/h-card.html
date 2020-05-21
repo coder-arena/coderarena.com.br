@@ -1,14 +1,13 @@
 <p class="h-card vcard">
+  🚀
   <a style="text-decoration: none" href="{{ .Site.BaseURL }}" class="p-name u-url url author metatag" rel="me">
-    {{ .Site.Params.author }} 🤘
+    {{ .Site.Title }}
   </a>
+  &copy;
   <time>{{ now.Year }} </time>
   <div>
-    <a class="p-nickname u-email email metatag" rel="me" href="mailto:{{ .Site.Params.email1 }}">
-      {{ .Site.Params.email1 }}
-    </a> / 
-    <a class="p-nickname u-email email metatag" rel="me" href="mailto:{{ .Site.Params.email2 }}">
-        {{ .Site.Params.email2 }}
-      </a>
+    Contato <a class="p-nickname u-email email metatag" rel="me" href="mailto:{{ .Site.Params.email }}">
+      {{ .Site.Params.email }}
+    </a>
   </div>
 </p>

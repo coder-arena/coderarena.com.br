@@ -1,11 +1,15 @@
 ---
 author: Marcos V. Leal
 date: "2020-05-20T10:27:31Z"
-description: "O lugar ideal para artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
 draft: false
-image: /images/2020/05/coderarena-header.png
-slug: sobre
 title: Sobre
+slug: about
+description: "O lugar ideal para artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
+images: ["/images/2020/05/coderarena-header.png"]
+audio: []
+videos: []
+tags: ["Coder Arena", "Vídeo-aulas", "Programação"]
+categories: []
 ---
 
 ![Coder Arena](/images/2020/05/coderarena-header.png)
