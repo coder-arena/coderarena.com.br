@@ -1,3 +1,5 @@
+![Build and Deploy](https://github.com/coder-arena/coderarena.com.br/workflows/Build%20and%20Deploy/badge.svg?branch=master&event=push)
+
 # coderarena.com.br
 This is the source code for my personal website (https://coderarena.com.br/). I'm using [Hugo](https://gohugo.io) static site generator.
 If you're interested to build your website based on mine, feel free and follow the guidelines below.
