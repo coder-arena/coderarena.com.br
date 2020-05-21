@@ -14,7 +14,7 @@ theme = "paper"
   name = "Marcos V. Leal"
 
 [permalinks]
-  posts = "/posts/:slug/"
+  posts = "/blog/:slug/"
 
 [sitemap]
   changefreq = "monthly"
