@@ -103,3 +103,11 @@ disqusShortname = "coderarena"
       weight = -130
       identifier = "about"
       url = "/en/about"
+
+[deployment]
+order = [".json$", ".png$", ".jpg$", ".gif$"]
+
+[[deployment.targets]]
+name = "s3"
+URL = "s3://coderarena.com.br?region=us-east-1"
+cloudFrontDistributionID = "E3PYZWZDWHZZ50"

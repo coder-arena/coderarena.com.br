@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d8d0405d-fa49-4824-be12-649fb8083f67/deploy-status)](https://app.netlify.com/sites/coderarena/deploys)
-
 # coderarena.com.br
 This is the source code for my personal website (https://coderarena.com.br/). I'm using [Hugo](https://gohugo.io) static site generator.
 If you're interested to build your website based on mine, feel free and follow the guidelines below.
@@ -29,7 +27,7 @@ Navigate to `localhost:1313` and you'll probably see my personal blog locally.
 
 
 # Deploy
-I'm using [Netlify](https://www.netlify.com/), so the deploy is just a simple `git push`.
+I'm using [Github Actions](https://github.com/features/actions), [S3](https://aws.amazon.com/pt/s3/) and [CloudFront](https://aws.amazon.com/cloudfront/?nc2=type_a), so the deploy is just a simple `git push`.
 
 # Contribute
 Feel free to open issues ralated to my website or if you have any questions about the steps to get this thing working.
