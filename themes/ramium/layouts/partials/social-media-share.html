@@ -1,0 +1,36 @@
+<div id="social-media-share" class="has-text-centered">
+	<p>Compartilhe 😃</p>
+	<br>
+
+	<p class="buttons is-centered social-share-buttons">
+    <a class="button is-rounded share-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" onclick="socialMediaPopUp(this.href, '', 500, 500); return false;" title="Compartilhar no Facebook.">
+      <span class="icon">
+        <i class="fa fa-facebook-f"></i>
+      </span>
+      <span>Facebook</span>
+    </a>
+
+    <a class="button is-rounded share-twitter" href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}" onclick="socialMediaPopUp(this.href, '', 500, 500); return false;" title="Compartilhar no Twitter.">
+      <span class="icon">
+        <i class="fa fa-twitter"></i>
+      </span>
+      <span>Twitter</span>
+    </a>
+
+    <a class="button is-rounded share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}&summary={{ .Summary }}&source=coderarena.com.br" onclick="socialMediaPopUp(this.href, '', 900, 500); return false;" title="Compartilhar no LinkedIn.">
+      <span class="icon">
+        <i class="fa fa-linkedin"></i>
+      </span>
+      <span>Linkedin</span>
+    </a>
+
+    <a class="button is-rounded share-mail" href="mailto:?subject={{ .Title }}&amp;body=Confira este site {{ .Permalink }}" title="Compartilhar por E-mail.">
+      <span class="icon">
+        <i class="fa fa-envelope"></i>
+      </span>
+      <span>E-mail</span>
+    </a>
+	</p>
+</div>
+
+

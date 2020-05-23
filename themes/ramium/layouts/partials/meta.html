@@ -1,0 +1,27 @@
+{{ if .IsHome }}
+<meta name="description" content="{{ .Site.Params.Description }}">
+
+{{ else if eq .Kind "taxonomy" }}
+<meta name="description" content="Lista de artigos relacionados para {{ .Title }}">
+
+{{ else if eq .Kind "taxonomyTerm" }}
+<meta name="description" content="Lista de tags em {{ .Site.Title }}">
+
+{{ else if eq .Kind "section"}}
+<meta name="description" content="Lista de artigos em section- {{ .Title | humanize }}">
+
+{{ else if eq .Title "Sessões" }}
+<meta name="description" content="Lista de sessões em {{ .Site.Title }}">
+
+{{ else }}
+<meta name="description" content="
+  {{- with .Description }}{{ . }}
+  {{ else }}{{ with .Summary }}{{ . }}
+  {{ else }}{{ .Site.Params.description }}
+  {{ end }}{{ end -}}
+">
+{{ end }}
+
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/schema.html" . }}

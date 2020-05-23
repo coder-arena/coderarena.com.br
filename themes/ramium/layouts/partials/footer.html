@@ -1,0 +1,13 @@
+{{ with .Site.Params.GoogleSearch }}
+<script async src="https://cse.google.com/cse.js?cx={{ . }}"></script>
+<gcse:searchresults-only></gcse:searchresults-only>
+{{ end }}
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>© 2020 {{ .Site.Title }} - Todos os direitos reservados</p>
+    <p>
+      Me mande em e-mail 🤘 <a title="Me mande um e-mail" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+    </p>
+  </div>
+</footer>
