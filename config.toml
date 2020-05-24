@@ -1,9 +1,7 @@
-BaseURL= "https://coderarena.com.br/"
-LanguageCode= "pt-br"
-DefaultContentLanguage = "pt-br"
-Title = "Coder Arena"
-weight = 1
-Copyright = "Creative Commons - 2020"
+baseURL= "https://coderarena.com.br/"
+languageCode= "pt-br"
+defaultContentLanguage = "pt-br"
+title = "Coder Arena"
 enableRobotsTXT = true
 disqusShortname = "coderarena"
 googleAnalytics = "UA-167342890-1"
@@ -13,11 +11,9 @@ summaryLength = 40
 
 theme = "ramium"
 
-[auhor]
-  name = "Marcos V. Leal"
-
 [permalinks]
-  posts = "/blog/:slug/"
+  posts = "/posts/:slug/"
+  wiki = "/wiki/:slug/"
 
 [sitemap]
   changefreq = "monthly"
@@ -32,58 +28,45 @@ theme = "ramium"
 
   [[menu.main]]
     identifier = "blog"
-    name = "Blog"
+    name = "Artigos"
+    url = "/posts/"
     weight = 2
-      [[menu.main]]
-        parent = "blog"
-        name = "Artigos"
-        url = "/posts/"
-        weight = 1
-      [[menu.main]]
-        parent = "blog"
-        name = "Tags"
-        url = "/tags/"
-        weight = 2
-      [[menu.main]]
-        parent = "blog"
-        name = "Sessões"
-        url = "/sections/"
-        weight = 3
+
+  [[menu.main]]
+    identifier = "wiki"
+    name = "Wiki"
+    url = "/wiki/"
+    weight = 3
 
   [[menu.main]]
     name = "Autor"
     url = "/author/"
-    weight = 3
+    weight = 4
 
 [params]
   googleSearch = "005027135246943188782:x3jveffk7tj"
-  showDate = true # make false if dont want to show date for evergeen articles
-  cdnURL = "https://cdn.coderarena.com.br"
+  showDate = true
 
-  tagsInHome = 40     # set zero to not show in home page
-  sectionsInHome = 5  # set zero to not show in home page
-  paginatePostsPerPage = 5
+  tagsInHome = 40
+  sectionsInHome = 5
+  paginate = 10
   paginateTagsPerPage = 6
+  paginatePostsPerPage = 5
 
   description = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
   metadescription = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
-  logo = "images/logo.svg"
-  cover = "images/coderarena-cover.png"
+  logo = "https://cdn.coderarena.com.br/images/logo.svg"
   author = "Marcos V. Leal"
   authorimage = "images/author-marcosvleal.png"
-  authorlocation = "São Paulo, Brasil"
-  authorwebsite = "https://coderarena.com.br"
   email = "marcosleal@coderarena.com.br"
-  bio= "Escritor de códigos, apaixonado por café, tecnologia e empreendedorismo."
-  paginate = 10
 
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   # RSSLink = "http://feeds.feedburner.com/..."
-  githubProfile = "marcosleal-prd"
   twitterProfile = "marcosleal_prd"
   facebookProfile = "marcosleal.prd"
-  instagramProfile = "coderarena"
   linkedinProfile = "marcosleal-prd"
+  githubProfile = "coder-arena"
+  instagramProfile = "coderarena"
   youtubeChannel = "UC9ljALQ1KcfatYfoo_MqSgQ"
 
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
@@ -93,9 +76,6 @@ theme = "ramium"
   # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
   # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
   hjsStyle = "dracula"
-
-  [params.social]
-    twitter = "marcosleal_prd"
 
 [taxonomies]
   tag = "tags"

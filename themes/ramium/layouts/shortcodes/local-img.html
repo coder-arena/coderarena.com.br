@@ -1,14 +1,14 @@
 {{ if .IsNamedParams }}
 
 <figure>
-    <img src="{{.Get "src" | relURL }}"
-        {{ if .Get "caption" }}
-            alt="{{.Get "caption"}}"
-        {{ end }}
-    >
+  <img src="{{.Get "src" | relURL }}"
     {{ if .Get "caption" }}
-        <figcaption>{{.Get "caption"}}</figcaption>
+      alt="{{.Get "caption"}}"
     {{ end }}
+  >
+  {{ if .Get "caption" }}
+    <figcaption>{{.Get "caption"}}</figcaption>
+  {{ end }}
 </figure>
 
 {{ end }}

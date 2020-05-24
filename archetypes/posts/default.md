@@ -3,7 +3,7 @@ author: Marcos V. Leal
 date: {{ now.Format "2-01-2006" }}
 draft: false
 title: {{ replace .Name "-" " " | title }}
-slug: title-draft
+slug: post-draft
 description: ""
 image: ""
 images: []

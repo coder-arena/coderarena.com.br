@@ -1,13 +1,33 @@
-{{ with .Site.Params.GoogleSearch }}
-<script async src="https://cse.google.com/cse.js?cx={{ . }}"></script>
-<gcse:searchresults-only></gcse:searchresults-only>
-{{ end }}
+{{- partial "newsletter.html" . -}}
 
 <footer class="footer">
   <div class="content has-text-centered">
-    <p>© 2020 {{ .Site.Title }} - Todos os direitos reservados</p>
+    <p>Copyright © 2020 {{ .Site.Title }}</p>
     <p>
       Me mande em e-mail 🤘 <a title="Me mande um e-mail" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
     </p>
   </div>
 </footer>
+
+{{ with .Site.Params.GoogleSearch }}
+<script async src="https://cse.google.com/cse.js?cx={{ . }}"></script>
+<gcse:searchresults-only></gcse:searchresults-only>
+{{ end }}
+
+<script src={{ "/js/main.js" | relURL }}></script>
+
+{{ if not (in (string .Site.BaseURL) "localhost") }}
+<script>
+  if (navigator.serviceWorker.controller) {
+    console.log('[PWA Builder] active service worker found, no need to register')
+  } else {
+    navigator.serviceWorker.register('pwabuilder-sw.js', {
+      scope: './'
+    }).then(function(reg) {
+      console.log('Service worker has been registered for scope:'+ reg.scope);
+    });
+  }
+</script>
+
+{{ template "_internal/google_analytics_async.html" . }}
+{{ end }}

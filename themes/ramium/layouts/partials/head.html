@@ -1,27 +1,30 @@
 <title>
-    {{- if not .IsHome }}
-    {{ with .Title | title }}{{ . }} | {{ end }}
-    {{ end }}
-    {{ .Site.Title -}}
+  {{- if not .IsHome }}
+  {{ with .Title | title }}{{ . }} | {{ end }}
+  {{ end }}
+  {{ .Site.Title -}}
 </title>
 
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="author" content="Marcos V. Leal">
+<meta name="theme-color" content="#fafafa">
 
 {{- partial "meta.html" . -}}
 
 <link rel="canonical" href="{{ .Permalink }}" />
+<link rel="manifest" href="/manifest.json">
 
-<link rel="icon" type="image/png" href="{{ .Site.Params.cdnURL }}/images/favicon.ico">
+<link rel="sitemap" type="application/xml" href="{{.Site.BaseURL}}sitemap.xml" />
+
+{{ range .AlternativeOutputFormats -}}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title | safeHTML }}" />
+{{ end -}}
+
+<link rel="icon" type="image/png" href="https://cdn.coderarena.com.br/images/favicon.ico">
 
 <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | relURL }}">
 <link rel="stylesheet" href="{{ "/css/bulma.min.css" | relURL }}">
-
-{{ if not (in (string .Site.BaseURL) "localhost") }}
-{{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
-
-<script src={{ "/js/ramium.js" | relURL }}></script>
-<link rel="stylesheet" href={{ "/css/ramium.css" | relURL }}>
-
-{{ template "_internal/google_analytics_async.html" . }}
+<link rel="stylesheet" href={{ "/css/styles.css" | relURL }}>
