@@ -3,7 +3,6 @@ author: Marcos V. Leal
 date: {{ now.Format "2-01-2006" }}
 draft: false
 title: {{ replace .Name "-" " " | title }}
-slug: post-draft
 description: ""
 image: ""
 images: []
@@ -21,6 +20,7 @@ For other options, put these in the front matter:
   showDate: true/false    to enable/disable showing dates
   images: []              social image (opengraph and twitter cards)
   image: ""               theme and single page
+  slug: ""                custom slug for page, post or other
 
 For better seo you can set
   lastmod: 2020-4-11      after modifying an article, set lastmod to let google know
