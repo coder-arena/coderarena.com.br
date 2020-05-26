@@ -2,11 +2,18 @@
   <article class="media">
     <figure class="media-left">
       <div class="image is-128x128">
-        <!-- <div class="image is-4by3"> -->
-        {{ with .Params.image }}
-        <img src="{{ . | relURL }}">
+        {{ if .Params.images }}
+
+          {{ range first 1 .Site.Params.images }}
+            <img src="{{ . | relURL }}">
+          {{ end }}
+
         {{ else }}
-        <img src="{{ "/image/default.jpeg" | relURL }}">
+
+          {{ range first 1 .Site.Params.images }}
+           <img src="{{ . | relURL }}">
+          {{ end }}
+
         {{ end }}
       </div>
     </figure>

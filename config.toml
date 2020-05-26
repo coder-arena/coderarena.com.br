@@ -18,7 +18,7 @@ theme = "ramium"
 [sitemap]
   changefreq = "monthly"
   filename = "sitemap.xml"
-  priority = 0.8
+  priority = 0.5
 
 [menu]
   [[menu.main]]
@@ -56,8 +56,9 @@ theme = "ramium"
   description = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
   metadescription = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
   logo = "https://cdn.coderarena.com.br/images/logo.svg"
+  images = ["https://cdn.coderarena.com.br/images/coder-arena.jpg"]
   author = "Marcos V. Leal"
-  authorimage = "images/author-marcosvleal.png"
+  authorimage = "https://cdn.coderarena.com.br/images/author-marcosvleal.png"
   email = "marcosleal@coderarena.com.br"
 
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
@@ -72,16 +73,20 @@ theme = "ramium"
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
   hideHUGOSupport = false
 
-  # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
-  # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
-  # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
-  hjsStyle = "dracula"
-
 [taxonomies]
   tag = "tags"
 
-[markup.goldmark.renderer]
-  unsafe = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+    [markup.highlight]
+      lineNos = true
+      lineNumbersInTable = false
+      tabWidth = 2
+      style = "dracula"
+
 
 [deployment]
 order = [".png$", ".jpg$", ".gif$", ".svg$"]

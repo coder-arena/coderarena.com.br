@@ -1,6 +1,6 @@
 ---
 author: Marcos V. Leal
-date: {{ now.Format "2-01-2006" }}
+date: {{ .Date }}
 draft: false
 title: {{ replace .Name "-" " " | title }}
 description: ""
