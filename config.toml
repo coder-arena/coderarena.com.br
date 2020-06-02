@@ -6,7 +6,7 @@ enableRobotsTXT = true
 disqusShortname = "coderarena"
 googleAnalytics = "UA-167342890-1"
 pluralizeListTitles = false
-enableemoji = false
+enableEmoji = true
 summaryLength = 40
 
 theme = "ramium"

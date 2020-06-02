@@ -31,15 +31,15 @@ Sua flexibilidade permite fazer muitas coisas. O Python pode ser usado para escr
 
 **O uso tem se dado principalmente em:**
 
-- Criação de aplicativos desktop, inclusíve jogos;
+- Criação de aplicativos desktop, inclusive jogos;
 - Desenvolvimento de páginas web e APIs;
 - Análise matemática e ciência de dados;
 
 É possível encontrar grandes marcas que fazem uso massivo do Python em suas aplicações, como [Reddit](https://www.reddit.com/), [Dropbox](https://www.dropbox.com/pt_BR/) e [YouTube](https://www.youtube.com/?gl=BR).
 
-Existe um conto que afirma que sempre que o player do YouTube é ativado, um script Python é executado - *mito ou verdade? não sei dizer!*
+Há um conto que diz que sempre que o player do YouTube é ativado, um script Python é executado - *mito ou verdade? não sei dizer!*
 
-**Principais propríedades do Python:**
+**Principais propriedades do Python:**
 
 1. **Case sensitive:** Faz diferenciação entre maiúsculas e minúsculas. Ex: `Token` é diferente de `token`;
 2. **Fortemente tipado:** Aplica tipos de dados para previnir operações inconsistentes entre tipos;
@@ -52,7 +52,7 @@ Existe um conto que afirma que sempre que o player do YouTube é ativado, um scr
 
 Com o Python instalado digite `python` no seu terminal, no REPL[^2] digite `import this`.
 
-#### Traduzido para pt-BR
+#### Traduzido para pt-br
 
 ```
 Bonito é melhor que feio.
@@ -112,11 +112,11 @@ O objetivo é reunir todo conteúdo produzido e traduzido pela comunidade brasil
 
 A Python Software Foundation, ou PSF, é uma empresa sem fins lucrativos que detém os direitos de propriedade intelectual por trás da linguagem Python. A empresa gerencia o código-fonte aberto desde a versão 2.1 e as marcas envolvidas no ecossistema.
 
-A PSF é a realizadora da [PyCon](http://us.pycon.org/), conferência norte-americana de Python, além disso a empresa apoia outros enventos de Python em todo o mundo.
+A PSF é a realizadora da [PyCon](http://us.pycon.org/), conferência norte-americana de Python, além disso a empresa apoia outros eventos de Python em todo o mundo.
 
 ### Python.org
 
-Site oficial do Python, nele é possível encontrar todos os links relativos no ecossitema da linguagem, binários para downloads, informativos de releases e PEPs[^4].
+Site oficial do Python, nele é possível encontrar todos os links relativos ao ecossistema da linguagem, binários para download, informativos de releases e as PEPs[^4].
 
 ### PyPA
 
@@ -124,7 +124,7 @@ Python Package Authority, é um subgrupo de pessoas dentro da PSF responsável p
 
 A PyPA publica o **<https://packaging.python.org/>** como recurso autorizado sobre como empacotar, publicar e instalar projetos Python usando ferramentas atuais.
 
-Contudo, não define quais bibliotecas entrarão como padrão no Python e nem quais são as ferramentas terceiras reconhecidas pela Python.org.
+Contudo, não define quais bibliotecas entrarão como padrão no Python e nem quais são as ferramentas terceiras reconhecidas pela linguagem.
 
 **Principais ferramentas mantidas pela PyPA:**
 
@@ -144,9 +144,34 @@ Repositório de pacotes Python, [**acesse o site**](https://pypi.org/).
 
 ### Padrão
 
+As PEPs 517 e 518 definem o padrão para o arquivo `pyproject.toml` e estipulam uma seção chamada `[build-system]`. De forma simplificada, esse padrão serve para especificar:
+
+- [PEP 517](https://www.python.org/dev/peps/pep-0517/): Como um pacote deverá ser criado a partir do código fonte;
+- [PEP 518](https://www.python.org/dev/peps/pep-0518/): Quais pacotes precisam ser instalados antes de tentar construir, ou seja, os requisitos de construção;
+
+Essas PEPs em conjunto definem um padrão simples para a gestão de dependências em aplicações e pacotes a serem publicados na PyPI.
+
 ### Pipenv
 
+O [**Pipenv**](https://github.com/pypa/pipenv) surgiu como uma boa proposta de solução para gerenciamento de pacotes Python, inteligente, feita pensando em humanos.
+
+Com a promessa de controlar não só as versões de dependências como também gerenciar os ambientes virtuais.
+
+**Mas as promessas não se cumpriram...** :cry:
+
+O tempo passou e a ferramenta ficou praticamente 1 ano e meio sem nenhuma atualização, o que deixou a comunidade bastante insatisfeita, principalmente pela falta de um posicionamento consistente por parte do time desenvolvedor da "solução".
+
+No momento em que eu escrevo este artigo uma versão foi publicada. No entanto, o Pipenv continua em desacordo com o **padrão estipulado pelas PEPs 517 e 518**.
+
 ### Poetry
+
+Com tudo isso, qual ferramenta usar?
+
+Existem inúmeras alternativas, cada uma com suas particularidades. E neste artigo eu vou apresentar a minha opção favorita, [**o Poetry**](https://python-poetry.org/).
+
+O Poetry está de acordo com o padrão mencionado anteriormente, além disso a ferramenta tem recursos que facilitam a publicação de pacotes diretamente no PyPI.
+
+O arquivo `pyproject.toml` de um projeto que utiliza o Poetry é semelhante ao mostrado abaixo.
 
 ```toml
 [tool.poetry]
@@ -192,16 +217,28 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 ```
 
+Nesse arquivo você pode notar a presença dos elementos básico, dependências, dependências de desenvolvimento, `[build-system]` e alguns outros metadados.
+
+Além dessas chaves, você também pode adicionar outras informações de configuração, como por exemplo [iSort](https://github.com/timothycrosley/isort), [Black](https://github.com/psf/black) e [Tox](https://tox.readthedocs.io/en/latest/).
+
+Já deu para notar que essa é uma combinação poderosa, certo?
+
 ## Conclusão
 
-Não esqueça de deixar suas dúvidas, críticas ou sugestões de temas. 😉
+O Poetry é realmente muito simples, desde a sua instalação até o seu uso. Acredito que assim que visitar o site oficial chegará à mesma conclusão.
+
+Meu conselho é **não se prender a uma ùnica solução**, experimente outras, entenda como funcionam. Esse tipo de ferramenta costuma ser bastante volátil.
+
+Espero sinceramente que tenha gostado e que esse conteúdo o ajude a tornar o seu ambiente de desenvolvimento com Python ainda mais gostoso (ou pelo menos no que diz respeito a gestão de dependências).
+
+**Não esqueça de deixar suas dúvidas, críticas ou sugestões de temas.** :wink:
 
 Um forte abraço e até a próxima.
 
 **Links:**
 
-- [Projeto no Github](https://github.com/marcosleal-prd/blog-python-poetry)
-- [Slides no Speaker Deck](https://speakerdeck.com/marcosleal_prd/python-package-managers-ecossistema-pipenv-e-poetry)
+- [**Projeto no Github**](https://github.com/marcosleal-prd/blog-python-poetry)
+- [**Slides no Speaker Deck**](https://speakerdeck.com/marcosleal_prd/python-package-managers-ecossistema-pipenv-e-poetry)
 
 [^1]: Definição criada pelo autor da linguagem Guido van Rossum na [página do Wikipédia](https://pt.wikipedia.org/wiki/Python).
 [^2]: REPL (Read, Evaluate, Print and Loop) é acrônimo para Leitura, Avaliação, Impressão e Loop, porque é exatamente isso que o computador faz.
