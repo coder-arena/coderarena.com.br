@@ -1,8 +1,9 @@
 ---
 author: Marcos V. Leal
 date: 2020-04-24T10:14:35-03:00
+lastmod: 2020-06-02T22:30:47-03:00
 draft: false
-title: 🐍 Python Package Managers Ecossistema Pipenv e Poetry
+title: 🐍 Python Package Managers, Ecossistema, Pipenv e Poetry
 description: "Python é uma linguagem simples. Mas, a estrutura necessária para criação de um projeto completo não é algo tão trivial."
 images: ["https://cdn.coderarena.com.br/uploads/2020/04/python-package-managers.jpg"]
 videos: ["https://youtu.be/23FB9UrDxMc"]
@@ -50,9 +51,9 @@ Há um conto que diz que sempre que o player do YouTube é ativado, um script Py
 
 É um conjunto composto por **19 princípios orientadores** para escrita de programas que influenciam no design da linguagem. Esse conjunto foi escrito e proposto por [Tim Peters](https://en.wikipedia.org/wiki/Tim_Peters_(software_engineer)) em 1999.
 
-Com o Python instalado digite `python` no seu terminal, no REPL[^2] digite `import this`.
+Com o Python instalado, digite `python` no seu terminal. No REPL[^2] que será aberto insira o comando `import this` e pressione ENTER.
 
-#### Traduzido para pt-br
+*Traduzido para pt-br*
 
 ```
 Bonito é melhor que feio.
@@ -122,7 +123,7 @@ Site oficial do Python, nele é possível encontrar todos os links relativos ao 
 
 Python Package Authority, é um subgrupo de pessoas dentro da PSF responsável por manter um conjunto principal de projetos usados no empacotamento do Python.
 
-A PyPA publica o **<https://packaging.python.org/>** como recurso autorizado sobre como empacotar, publicar e instalar projetos Python usando ferramentas atuais.
+A PyPA publica o <https://packaging.python.org/> como recurso autorizado sobre como empacotar, publicar e instalar projetos Python usando ferramentas atuais.
 
 Contudo, não define quais bibliotecas entrarão como padrão no Python e nem quais são as ferramentas terceiras reconhecidas pela linguagem.
 
@@ -138,11 +139,9 @@ Contudo, não define quais bibliotecas entrarão como padrão no Python e nem qu
 
 ### PyPI
 
-Repositório de pacotes Python, [**acesse o site**](https://pypi.org/).
+Repositório de pacotes Python, nele você poderá buscar, instalar e publicar pacotes.
 
 ## Package Managers
-
-### Padrão
 
 As PEPs 517 e 518 definem o padrão para o arquivo `pyproject.toml` e estipulam uma seção chamada `[build-system]`. De forma simplificada, esse padrão serve para especificar:
 
@@ -219,7 +218,7 @@ build-backend = "poetry.masonry.api"
 
 Nesse arquivo você pode notar a presença dos elementos básico, dependências, dependências de desenvolvimento, `[build-system]` e alguns outros metadados.
 
-Além dessas chaves, você também pode adicionar outras informações de configuração, como por exemplo [iSort](https://github.com/timothycrosley/isort), [Black](https://github.com/psf/black) e [Tox](https://tox.readthedocs.io/en/latest/).
+Além dessas chaves, você também pode adicionar outras informações de configuração, como por exemplo [isort](https://github.com/timothycrosley/isort), [black](https://github.com/psf/black) e [tox](https://tox.readthedocs.io/en/latest/).
 
 Já deu para notar que essa é uma combinação poderosa, certo?
 
