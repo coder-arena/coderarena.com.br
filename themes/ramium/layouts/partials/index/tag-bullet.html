@@ -12,12 +12,12 @@
     <div class="column is-10">
         <div class="content">
             <a href="{{ "/tags/" | relURL }}">
-                <h1>Leia artigos por Tags</h1>
+                <h1 class="is-size-2">Leia artigos por Tags</h1>
             </a>
             <p class="tags-summary">
                 {{ range $name := $randTags }}
                 <a href="{{ "/tags/" | relURL }}{{ $name | urlize }}">
-                    <span class="tag is-dark is-large is-rounded">
+                    <span class="tag is-dark is-medium">
                         {{ replace $name "-" " " }}
                     </span>
                 </a>
