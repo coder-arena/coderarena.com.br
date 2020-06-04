@@ -285,8 +285,8 @@ code {
   border-top: 1px solid #f4f4f4;
 }
 
-.footer-news .title-wrapper {
-  margin-bottom: 1rem;
+.footer-news .subtitle {
+  display: inline;
 }
 
 /******** Footer *******/
