@@ -82,7 +82,7 @@ theme = "ramium"
       unsafe = true
 
     [markup.highlight]
-      lineNos = true
+      lineNos = false
       lineNumbersInTable = false
       tabWidth = 2
       style = "dracula"

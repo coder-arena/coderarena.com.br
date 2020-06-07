@@ -1,19 +1,9 @@
 {{ define "main" }}
 
-<section class="hero has-text-centered">
-    <div class="hero-body">
-        <div class="container">
-            <p class="subtitle is-5">
-                {{ with .Content }}
-                {{ . }}
-                {{ end }}
-            </p>
-        </div>
-    </div>
-</section>
-
-{{- partial "index/tag-bullet.html" . -}}
-{{- partial "index/section-bullet.html" . -}}
-{{- partial "index/list-blog-brief.html" . -}}
+<main class="main">
+  {{- partial "index/tag-bullet.html" . -}}
+  {{- partial "index/section-bullet.html" . -}}
+  {{- partial "index/list-blog-brief.html" . -}}
+</main>
 
 {{ end }}
