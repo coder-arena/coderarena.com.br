@@ -8,7 +8,7 @@ description: "Python é uma linguagem simples. Mas, a estrutura necessária para
 images: ["https://cdn.coderarena.com.br/uploads/2020/04/python-package-managers.jpg"]
 videos: ["https://youtu.be/23FB9UrDxMc"]
 tags: ["Package Managers", "Pipenv", "Poetry", "Python3"]
-categories: ["Package Managers"]
+categories: ["Python"]
 sitemap:
   changefreq: "monthly"
   priority: 0.9
