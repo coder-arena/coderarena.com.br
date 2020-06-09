@@ -1,7 +1,7 @@
 ---
 author: Marcos V. Leal
-date: 2020-06-10T15:00:12-03:00
-draft: true
+date: 2020-06-10T14:15:12-03:00
+draft: false
 title: Como usar ESLint em projetos com TypeScript e Node.JS
 description: "O ESLint é uma poderosa (e plugável) ferramente de lint para JavaScript. E neste artigo vamos aprender a configurar o ESLint em seus projetos com TypeScript e Node.JS."
 images: ["https://cdn.coderarena.com.br/uploads/2020/06/eslint-com-typescript-e-node-js.png"]
@@ -54,7 +54,7 @@ No final do ano passado (2019), a equipe responsável pelo TSLint decidiu descon
 
 Um dos principais motivos é que o ESLint já existe e chegou ao ponto de haver muita coisa duplicada entre as duas ferramentas, que por sinal possuem o mesmo objetivo.
 
-Não é de se assustar que no futuro, a visão é de um mundo em que desenvolvedores __JavaScript e TypeScript estarão cada vez mais juntos__.
+Não é de se assustar que no futuro, a visão é de um mundo em que desenvolvedores __JavaScript e TypeScript estejam cada vez mais juntos__.
 
 Devido a toda a extensibilidade fornecida pelo ESLint, podemos utilizá-lo nos projetos TypeScript com a adição de alguns plugins.
 
@@ -76,7 +76,7 @@ O comando acima adiciona 3 dependências de desenvolvimento:
 - `@typescript-eslint/parser`: O analisador que permitirá que o ESLint conheça o código TypeScript;
 - `@typescript-eslint/eslint-plugin`: Um plug-in que contém várias regras ESLint específicas do TypeScript;
 
-Depois de adicionar a dependências necessárias, precisamos criar o arquivo de configuração do ESLint, para isso crie o arquivo no diretório raiz do projeto e dê a ele o nome de `.eslintrc.js`.
+Depois de adicionar as dependências necessárias, precisamos criar o arquivo de configuração do ESLint, para isso crie o arquivo no diretório raiz do projeto e dê a ele o nome de `.eslintrc.js`.
 
 ```js
 module.exports = {
@@ -106,7 +106,7 @@ module.exports = {
 
 Este arquivo suporta outros formatos como JSON, YAML e até uma chave `eslintConfig` no arquivo `package.json`, mas eu gosto de usar o `.js`.
 
-Além disso é possível adicionar outras ferramentas ao nosso setup, como o [Prettier](https://prettier.io/) por exemplo, mas isso é assunto para outro artigo que sairá em breve :wink:.
+Além disso é possível adicionar outras ferramentas ao nosso setup, como o [Prettier](https://prettier.io/) por exemplo, mas isso é assunto para outro artigo que sairá em breve :wink:
 
 #### Ignorando arquivos
 
@@ -131,7 +131,9 @@ Abra o seu `package.json` e dentro da chave `scripts`, crie um novo chamado de `
 ```json
 {
   "scripts": {
+    //...
     "lint": "eslint . --ext .ts,.js",
+    //...
   }
 }
 ```
@@ -160,9 +162,9 @@ Execute no seu terminal o comando:
 npm run lint
 ```
 
-Com isso todo o seu código passará por análise de estilo e de padrão, e caso não atenda à alguma regra será reportado o erro no terminal.
+Com isso, todo o seu código passará por análise de estilo e de padrão, e caso não atenda à alguma regra será reportado o erro no terminal.
 
-Para conhecer a opções fornecidas pela CLI, [consulte a documentação oficial](https://eslint.org/docs/user-guide/command-line-interface).
+Para conhecer a opções fornecidas pela CLI do ESLint, [consulte a documentação oficial](https://eslint.org/docs/user-guide/command-line-interface).
 
 ## Regras
 
