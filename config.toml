@@ -74,6 +74,7 @@ theme = "ramium"
   hideHUGOSupport = false
 
 [taxonomies]
+  category = "categories"
   tag = "tags"
 
 [markup]
