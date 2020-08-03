@@ -1,7 +1,7 @@
 ---
 author: Marcos V. Leal
 date: 2020-06-20T20:19:22-03:00 # 2020-06-23T20:19:22-03:00
-draft: false
+draft: true
 title: Como usar Prettier com ESLint e TypeScript no VSCode
 description: "Neste artigo, vou explicar como combinar o poderoso ESLint com o formatador de código JavaScript mais famoso do mercado."
 # images: ["https://cdn.coderarena.com.br/uploads/2020/06/eslint-com-typescript-e-node-js.png"]
