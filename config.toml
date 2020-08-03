@@ -55,10 +55,10 @@ theme = "ramium"
 
   description = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
   metadescription = "Artigos e vídeo-aulas sobre desenvolvimento, programação, carreira, empreendedorismo e outras coisas."
-  logo = "https://cdn.coderarena.com.br/images/logo.svg"
-  images = ["https://cdn.coderarena.com.br/images/coder-arena.jpg"]
+  logo = "/images/logo.svg"
+  images = ["/images/coder-arena.jpg"]
   author = "Marcos V. Leal"
-  authorimage = "https://cdn.coderarena.com.br/images/author-marcosvleal.png"
+  authorimage = "/images/author-marcosvleal.png"
   email = "marcosleal@coderarena.com.br"
 
   # Optional RSS-Link, if not provided it defaults to the standard index.xml

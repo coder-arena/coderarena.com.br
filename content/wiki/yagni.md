@@ -82,7 +82,7 @@ Essa evolução **resulta no acúmulo de Débitos Técnicos** (assunto para uma 
 
 Chegamos ao final com **três tipos de recursos presuntivos** e **quatro tipos de custos** que ocorrem quando você os negligência o Yagni.
 
-![Custos Yagni](https://cdn.coderarena.com.br/uploads/2020/05/yagni-costs.png)
+![Custos Yagni](/images/2020/05/yagni-costs.png)
 
 ## Conclusão
 

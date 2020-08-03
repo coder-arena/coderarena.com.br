@@ -5,7 +5,7 @@ lastmod: 2020-06-23T20:36:47-03:00
 draft: false
 title: Como usar ESLint em projetos com TypeScript e Node.JS
 description: "O ESLint é uma poderosa (e plugável) ferramente de lint para JavaScript. E neste artigo vamos aprender a configurar o ESLint em seus projetos com TypeScript e Node.JS."
-images: ["https://cdn.coderarena.com.br/uploads/2020/06/eslint-com-typescript-e-node-js.png"]
+images: ["/images/2020/06/eslint-com-typescript-e-node-js.png"]
 tags: ["ESLint", "Node.JS", "TypeScript"]
 categories: ["TypeScript"]
 series: ["ESLint com TypeScript"]

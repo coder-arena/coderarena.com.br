@@ -5,7 +5,7 @@ draft: false
 type: "addons"
 layout: "author"
 url: "/author/"
-images: ["https://cdn.coderarena.com.br/images/coder-arena.jpg"]
+images: ["/images/coder-arena.jpg"]
 ---
 
 ## A Coder Arena

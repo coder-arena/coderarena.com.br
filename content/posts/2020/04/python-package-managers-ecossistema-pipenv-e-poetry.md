@@ -5,7 +5,7 @@ lastmod: 2020-06-02T22:30:47-03:00
 draft: false
 title: 🐍 Python Package Managers, Ecossistema, Pipenv e Poetry
 description: "Python é uma linguagem simples. Mas, a estrutura necessária para criação de um projeto completo não é algo tão trivial."
-images: ["https://cdn.coderarena.com.br/uploads/2020/04/python-package-managers.jpg"]
+images: ["/images/2020/04/python-package-managers.jpg"]
 videos: ["https://youtu.be/23FB9UrDxMc"]
 tags: ["Package Managers", "Pipenv", "Poetry", "Python3"]
 categories: ["Python"]
