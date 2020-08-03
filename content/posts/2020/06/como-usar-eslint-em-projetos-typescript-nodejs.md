@@ -1,12 +1,14 @@
 ---
 author: Marcos V. Leal
 date: 2020-06-10T14:15:12-03:00
+lastmod: 2020-06-23T20:36:47-03:00
 draft: false
 title: Como usar ESLint em projetos com TypeScript e Node.JS
 description: "O ESLint é uma poderosa (e plugável) ferramente de lint para JavaScript. E neste artigo vamos aprender a configurar o ESLint em seus projetos com TypeScript e Node.JS."
 images: ["https://cdn.coderarena.com.br/uploads/2020/06/eslint-com-typescript-e-node-js.png"]
 tags: ["ESLint", "Node.JS", "TypeScript"]
 categories: ["TypeScript"]
+series: ["ESLint com TypeScript"]
 sitemap:
   changefreq: "monthly"
   priority: 0.9
@@ -18,7 +20,12 @@ Ao estudar uma nova linguagem uma das primeiras coisas que procuro entender é: 
 
 A definição de um padrão de estilo é uma das coisas indispensáveis para escrita de código limpo.
 
-Neste artigo, vou ensiná-lo a configurar o ESLint para uso em projetos com TypeScript e Node.JS.
+> Este é o primeiro de uma pequena série de 2 artigos sobre ESLint com TypeScript:
+>
+> 1. __Como usar ESLint em projetos com TypeScript e Node.JS;__
+> 2. [__Como usar Prettier com ESLint e TypeScript no VSCode;__](/posts/como-usar-prettier-com-eslint-e-typescript-no-vscode)
+
+E neste artigo, vou ensiná-lo a configurar o ESLint para uso em projetos com TypeScript e Node.JS.
 
 **Continue lendo...**
 
@@ -106,7 +113,9 @@ module.exports = {
 
 Este arquivo suporta outros formatos como JSON, YAML e até uma chave `eslintConfig` no arquivo `package.json`, mas eu gosto de usar o `.js`.
 
-Além disso é possível adicionar outras ferramentas ao nosso setup, como o [Prettier](https://prettier.io/) por exemplo, mas isso é assunto para outro artigo que sairá em breve :wink:
+Além disso é possível adicionar outras ferramentas ao nosso setup, como o [Prettier](https://prettier.io/) por exemplo.
+
+[**Falo sobre isso no próximo artigo dessa série**](/posts/como-usar-prettier-com-eslint-e-typescript-no-vscode) :wink:
 
 #### Ignorando arquivos
 
@@ -178,7 +187,7 @@ Eu simplesmente adoro o ESLint, ele traz toda a credibilidade de uma ferramenta 
 
 Certamente, em 2020 podemos dedicar tempo conhecendo melhor a ferramenta, e continuarei procurando no ESLint a solução para todas as minhas necessidades de __lint para TypeScript e JavaScript__.
 
-No próximo artigo vamos discutir como adicionar ainda mais poder ao nosso projeto para estilo de código com ESLint e Prettier.
+[No próximo artigo dessa série vamos discutir como adicionar ainda mais poder ao nosso projeto para estilo de código com ESLint e Prettier.](/posts/como-usar-prettier-com-eslint-e-typescript-no-vscode)
 
 **E você, como tem utilizado lint em seus projetos TypeScript?** Diga nos comentários.
 
