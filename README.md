@@ -1,35 +1,59 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b8371ea4-68d5-41e7-8a46-9b720fab22a2/deploy-status)](https://app.netlify.com/sites/adoring-swartz-c8a2d8/deploys)
 
 # coderarena.com.br
-This is the source code for my personal website (https://coderarena.com.br/). I'm using [Hugo](https://gohugo.io) static site generator.
-If you're interested to build your website based on mine, feel free and follow the guidelines below.
 
-# About Hugo
-> Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike other systems which dynamically build a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.
+## Bem-vindo(a) a Coder Arena :rocket:
 
-Please check Hugo installing page -> https://gohugo.io/overview/installing/
-Hugo is written in [Go](https://gohugo.io/overview/installing/), so you'll first need to install it.
+Esse é o código fonte do [site](https://coderarena.com.br/), todos os arquivos estão abertos para consulta.
 
-## New post
-```
+Eu estou usando o [Hugo](https://gohugo.io) para geração de site estático, ele é incrível e bastante simples de usar.
+
+Se você está interessado em construir seu site baseado no meu, fique à vontade e siga as orientações abaixo.
+
+## Sobre o Hugo
+
+Hugo é uma estrutura de site de uso geral. Tecnicamente falando, ele é um gerador de sites estáticos.
+
+Ao contrário de outros sistemas que criam dinamicamente uma página toda vez que um visitante a solicita, o Hugo **faz a construção quando você cria seu conteúdo**.
+
+Como os sites são vistos com muito mais frequência do que editados, o Hugo é otimizado para visualização de sites, ao mesmo tempo que oferece uma ótima experiência de escrita.
+
+Para saber como funciona o [processo de instalação](https://gohugo.io/overview/installing/) visite a documentação.
+
+Vale lembrar que o Hugo é escrito em [Go](https://gohugo.io/overview/installing/), então você primeiro precisa instalá-lo se desejar compilar você mesmo.
+
+[**Visite o site oficial.**](https://gohugo.io)
+
+### Novo Post
+
+A criação de um post é bastante facilitada pela CLI, tudo que você precisa fazer é digitar:
+
+```bash
 hugo new post/my-first-post.md
 ```
 
-## Running
-First, clone this repo and then.
-I'm using the Casper theme, which is a "copy" of Ghost Casper theme (which I was using previously).
-If you want to use Casper, just clone it to the `themes` directory.
+### Executando
 
+Primeiro, clone esse repositório.
+
+Estou usando o tema Ramium (fiz algumas modificações para atender às minhas necessidades).
+
+Se você quiser usar o Ramium, basta clona-lo no diretório `themes`. Em seguida, para colocar seu site de pé, execute o comando abaixo:
+
+```bash
+hugo server --theme=ramium
 ```
-hugo server --theme=paper
-```
-Navigate to `localhost:1313` and you'll probably see my personal blog locally.
 
-## Content
+Pronto, agora navegue até `http://localhost:1313` e provavelmente você verá o site da Coder Arena localmente.
 
+## Deploy
 
-# Deploy
-I'm using [Netlify](https://www.netlify.com/), so the deploy is just a simple `git push`.
+Eu estou usando o [Netlify](https://www.netlify.com/), então o deploy é apenas um simples `git push` na branch `main`.
 
-# Contribute
-Feel free to open issues ralated to my website or if you have any questions about the steps to get this thing working.
+Antes eu usava o serviço da AWS para hospedagem, isso envolvida [S3](https://aws.amazon.com/pt/s3/), [Route 53](https://aws.amazon.com/pt/route53/), [CloudFront](https://aws.amazon.com/pt/cloudfront/), [Certificate Manager](https://aws.amazon.com/pt/certificate-manager/) e algumas configurações adicionais em `config.toml`.
+
+Se ficou interessado nessa abordagem, pode conferir [esse commit](https://github.com/coder-arena/coderarena.com.br/commit/3b5cf6316fca752f5b158e5af199e60554ea7a0a) para saber como foi o processo.
+
+## Contribua
+
+Sinta-se à vontade para abrir questões relacionadas ao meu site ou se tiver alguma dúvida sobre as etapas para fazer isso funcionar.
