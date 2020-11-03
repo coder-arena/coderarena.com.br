@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<div class="container">
+  <div class="thankyou">
+    <div class="thankyou_content has-text-centered">
+      <figure class="image is-64x64">
+        <img src="/images/check.png" alt="E-mail verified" title="{{ .Title }}">
+      </figure>
+
+      <h1>{{ .Title }}</h1>
+
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}

@@ -4,9 +4,7 @@
 {{- partial "head.html" . -}}
 
 <body>
-  {{- partialCached "navbar.html" . -}}
   {{- block "main" . }}{{- end }}
-  {{- partialCached "footer.html" . -}}
 </body>
 
 </html>
