@@ -39,8 +39,8 @@ theme = "ramium"
     weight = 3
 
   [[menu.main]]
-    name = "Autor"
-    url = "/author/"
+    name = "Newsletter"
+    url = "https://news.coderarena.com.br/"
     weight = 4
 
 [params]
@@ -58,7 +58,6 @@ theme = "ramium"
   logo = "/images/logo.svg"
   images = ["/images/coder-arena.jpg"]
   author = "Marcos V. Leal"
-  authorimage = "/images/author-marcosvleal.png"
   email = "marcosleal@coderarena.com.br"
 
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
