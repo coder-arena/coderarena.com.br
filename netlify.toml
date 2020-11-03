@@ -29,7 +29,6 @@ HUGO_VERSION = "0.69.2"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 
-
 [[redirects]]
   from = "https://coderarena.netlify.app"
   to = "https://coderarena.com.br/"
@@ -39,5 +38,11 @@ HUGO_ENABLEGITINFO = "true"
 [[redirects]]
   from = "/*"
   to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/vip"
+  to = "https://news.coderarena.com.br/"
   status = 301
-  force = false
+  force = true
