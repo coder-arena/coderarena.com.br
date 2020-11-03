@@ -38,11 +38,11 @@ HUGO_ENABLEGITINFO = "true"
 [[redirects]]
   from = "/*"
   to = "/404"
-  status = 404
+  status = 200
   force = true
 
 [[redirects]]
   from = "/vip"
   to = "https://news.coderarena.com.br/"
-  status = 301
+  status = 200
   force = true
