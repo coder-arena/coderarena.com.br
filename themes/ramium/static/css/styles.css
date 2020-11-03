@@ -234,17 +234,6 @@ code {
   margin-bottom: 1em;
 }
 
-#author-image {
-  width: 100%;
-  max-width: 220px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  border-radius: 290486px;
-  background-color: #f4f4f4;
-}
-
 /* ----- Blog Brief ------- */
 .blog-brief .title {
   color: #3e464f;
@@ -353,17 +342,11 @@ code {
   text-decoration: underline;
 }
 
-/******** Footer Newsletter *******/
-.footer-news {
-  margin-top: 5rem;
-  border-top: 1px solid #f4f4f4;
-}
-
-.footer-news .subtitle {
-  display: inline;
-}
-
 /******** Footer *******/
+.footer {
+  margin-top: 5rem;
+}
+
 .footer p {
   font-size: 0.9em;
 }
