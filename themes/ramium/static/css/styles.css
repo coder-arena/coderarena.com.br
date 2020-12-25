@@ -17,12 +17,22 @@ body * {
 }
 
 .navbar-item.navyoutube,
+.navbar-item.navtwitter,
+.navbar-item.navfacebook,
 .navbar-item.navinstagram {
   outline: none;
 }
 
 .navbar-item.navyoutube > i {
   color: #ff0000;
+}
+
+.navbar-item.navtwitter > i {
+  color: #1DA2F1;
+}
+
+.navbar-item.navfacebook > i {
+  color: #0E82EC;
 }
 
 .navbar-item.navinstagram > i {

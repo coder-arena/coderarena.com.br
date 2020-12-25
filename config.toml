@@ -62,9 +62,8 @@ theme = "ramium"
 
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   # RSSLink = "http://feeds.feedburner.com/..."
-  twitterProfile = "marcosleal_prd"
-  facebookProfile = "marcosleal.prd"
-  linkedinProfile = "marcosleal-prd"
+  twitterProfile = "coderarena"
+  facebookProfile = "coderarena.oficial"
   githubProfile = "coder-arena"
   instagramProfile = "coderarena"
   youtubeChannel = "UC9ljALQ1KcfatYfoo_MqSgQ"

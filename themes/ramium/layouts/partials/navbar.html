@@ -35,6 +35,18 @@
     </div>
 
     <div class="navbar-end">
+      {{ with .Site.Params.twitterProfile }}
+      <a class="navbar-item navtwitter" href="https://twitter.com/{{ . }}" target="_blank">
+        <i class="fa fa-twitter fa-2x"></i>
+      </a>
+      {{ end }}
+
+      {{ with .Site.Params.facebookProfile }}
+      <a class="navbar-item navfacebook" href="https://fb.me/{{ . }}" target="_blank">
+        <i class="fa fa-facebook-square fa-2x"></i>
+      </a>
+      {{ end }}
+
       {{ with .Site.Params.youtubeChannel }}
       <a class="navbar-item navyoutube" href="https://youtube.com/channel/{{ . }}?sub_confirmation=1" target="_blank">
         <i class="fa fa-youtube-play fa-2x"></i>
